@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package ru.nms.diplom.ircrossfeature.service;
+
+message CrossFeatureRequest {
+    int32 queriesAmount = 1;
+    int32 k = 2;
+}
+
+message CrossFeatureResponse {
+    float faissMRR = 1;
+    float bm25MRR = 2;
+    float mrrWithRRF = 3;
+    float mrrWithRSF = 4;
+}
+
+service CrossFeatureService {
+    rpc calculateMRR(CrossFeatureRequest) returns (CrossFeatureResponse);
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package ru.nms.diplom.luceneir.service;
+
+message SearchRequest {
+    string query = 1;
+    int32 k = 2;
+}
+
+message SearchResponse {
+    repeated Document documents = 1;
+}
+
+message Document {
+    string id = 1;
+    string content = 2;
+    float score = 3;
+}
+
+service SearchService {
+    rpc knn(SearchRequest) returns (SearchResponse);
+}
