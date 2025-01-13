@@ -15,7 +15,7 @@ public class DataFrameLoader {
         Map<String, String> relevantPassages = new HashMap<>();
 
         try (FileReader reader = new FileReader(filePath);
-             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader())) {
+             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter('^'))) {
             for (CSVRecord csvRecord : csvParser) {
                 String key = csvRecord.get("query");
                 String value = csvRecord.get("relevant_passage_id");
@@ -26,5 +26,22 @@ public class DataFrameLoader {
         }
 
         return relevantPassages;
+    }
+
+    public static Map<String, String> loadAllPassages(String filePath) {
+        Map<String, String> allPassages = new HashMap<>();
+
+        try (FileReader reader = new FileReader(filePath);
+             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withDelimiter('^'))) {
+            for (CSVRecord csvRecord : csvParser) {
+                String key = csvRecord.get("id");
+                String value = csvRecord.get("passage_text");
+                allPassages.put(key, value);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return allPassages;
     }
 }

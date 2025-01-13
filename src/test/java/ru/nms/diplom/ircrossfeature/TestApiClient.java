@@ -15,13 +15,14 @@ public class TestApiClient {
     public static void main(String[] args) {
 
         CrossFeatureRequest request = CrossFeatureRequest.newBuilder()
-                .setK(100)
-                .setQueriesAmount(1000)
+                .setK(10)
+                .setQueriesAmount(100)
                 .build();
 
         CrossFeatureResponse response = stub.calculateMRR(request);
         System.out.println("faiss MRR: " + response.getFaissMRR());
-        System.out.println("bm25 MRR: " + response.getMrrWithRRF());
+        System.out.println("rrf MRR: " + response.getMrrWithRRF());
+        System.out.println("rsf MRR: " + response.getMrrWithRSF());
         System.out.println("lucene MRR: " + response.getBm25MRR());
     }
 }

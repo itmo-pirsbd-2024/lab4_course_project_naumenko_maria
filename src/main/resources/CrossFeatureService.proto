@@ -8,10 +8,10 @@ message CrossFeatureRequest {
 }
 
 message CrossFeatureResponse {
-    float faissMRR = 1;
-    float bm25MRR = 2;
-    float mrrWithRRF = 3;
-    float mrrWithRSF = 4;
+    double faissMRR = 1;
+    double bm25MRR = 2;
+    double mrrWithRRF = 3;
+    double mrrWithRSF = 4;
 }
 
 service CrossFeatureService {

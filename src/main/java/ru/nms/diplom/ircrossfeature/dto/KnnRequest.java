@@ -1,4 +1,4 @@
-package ru.nms.diplom.ircrossfeature.old;
+package ru.nms.diplom.ircrossfeature.dto;
 
 
 public class KnnRequest {

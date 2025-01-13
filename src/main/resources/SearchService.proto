@@ -7,16 +7,22 @@ message SearchRequest {
     int32 k = 2;
 }
 
-message SearchResponse {
+message DocumentsResponse {
     repeated Document documents = 1;
+}
+
+message SimilarityScoreRequest {
+    string query = 1;
+    repeated string docId = 2;
 }
 
 message Document {
     string id = 1;
-    string content = 2;
-    float score = 3;
+    double score = 2;
 }
 
+
 service SearchService {
-    rpc knn(SearchRequest) returns (SearchResponse);
+    rpc knn(SearchRequest) returns (DocumentsResponse);
+    rpc getSimilarityScores(SimilarityScoreRequest) returns (DocumentsResponse);
 }

@@ -4,25 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067733fb-e4d6-490c-b268-b98302b2983a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/BM25KnnRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/BM25Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/KnnRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/KnnResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/DataFrameLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/LuceneIRService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CrossFeatureService.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SearchService.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/nms/diplom/ircrossfeature/TestApiClient.java" afterDir="false" />
+    <list default="true" id="067733fb-e4d6-490c-b268-b98302b2983a" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/client/PythonServerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/dto/SimilarityScoreRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/dto/SimilarityScoreResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/MRRService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/ir/IRService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/ir/impl/FaissIRService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/util/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/BM25KnnRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/BM25Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/KnnRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/dto/KnnRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/old/KnnResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/dto/KnnResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/DataFrameLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/DataFrameLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/LuceneIRService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/ir/impl/LuceneIRService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CrossFeatureService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CrossFeatureService.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SearchService.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SearchService.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/nms/diplom/ircrossfeature/TestApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/nms/diplom/ircrossfeature/TestApiClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +35,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -50,7 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.TestApiClient.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.ir-cross-feature-api [clean].executor": "Run",
@@ -116,21 +123,59 @@
       <option name="presentableId" value="Default" />
       <updated>1736346872550</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1736703339252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736703339252</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
+          <line>31</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="3" />
+          <line>43</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java</url>
+          <line>42</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nms/diplom/ircrossfeature/service/CrossFeatureServiceImpl.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="21" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
