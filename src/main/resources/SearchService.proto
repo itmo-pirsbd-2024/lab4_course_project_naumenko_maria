@@ -1,0 +1,28 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package ru.nms.diplom.luceneir.service;
+
+message SearchRequest {
+    string query = 1;
+    int32 k = 2;
+}
+
+message DocumentsResponse {
+    repeated Document documents = 1;
+}
+
+message SimilarityScoreRequest {
+    string query = 1;
+    repeated string docId = 2;
+}
+
+message Document {
+    string id = 1;
+    double score = 2;
+}
+
+
+service SearchService {
+    rpc knn(SearchRequest) returns (DocumentsResponse);
+    rpc getSimilarityScores(SimilarityScoreRequest) returns (DocumentsResponse);
+}
